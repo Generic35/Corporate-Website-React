@@ -1,7 +1,7 @@
 {
-  "name": "react-slingshot",
-  "version": "7.0.1",
-  "description": "Starter kit for creating apps with React and Redux",
+  "name": "corporate-website-react",
+  "version": "0.0.1",
+  "description": "A corporate website leveraging React JS",
   "engines": {
     "npm": ">=3"
   },
