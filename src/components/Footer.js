@@ -46,6 +46,7 @@ const Footer = (props) => {
 };
 
 Footer.propTypes = {
-  links: PropTypes.array.required
+  links: PropTypes.arrayOf(PropTypes.string)
 }
+
 export default Footer;
