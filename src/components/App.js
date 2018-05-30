@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { hot } from "react-hot-loader";
 
+import ContactInfo from './ContactInfo';
 import Footer from './Footer';
 import Bottom from './Bottom';
 
@@ -27,6 +28,7 @@ class App extends React.Component {
     ];
     return (
       <div>
+        <ContactInfo />
         <Bottom />
         <Footer links={footerLinksText}/>
 
