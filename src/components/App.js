@@ -5,9 +5,10 @@ import PropTypes from "prop-types";
 import React from "react";
 import { hot } from "react-hot-loader";
 
+import Partners from "./Partners";
 import ContactInfo from './ContactInfo';
-import Footer from './Footer';
 import Bottom from './Bottom';
+import Footer from './Footer';
 
 // import AboutPage from "./AboutPage";
 // import FuelSavingsPage from "./containers/FuelSavingsPage";
@@ -28,6 +29,7 @@ class App extends React.Component {
     ];
     return (
       <div>
+        <Partners />
         <ContactInfo />
         <Bottom />
         <Footer links={footerLinksText}/>
