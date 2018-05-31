@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { hot } from "react-hot-loader";
 
+import MainSlider from "./MainSlider";
 import Features from "./Features";
 import RecentWorks from "./RecentWorks";
 import OurServices from "./OurServices";
@@ -34,6 +35,8 @@ class App extends React.Component {
     ];
     return (
       <div>
+
+        <MainSlider />
         <Features />
         <RecentWorks />
         <OurServices />
