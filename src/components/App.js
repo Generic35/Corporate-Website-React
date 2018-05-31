@@ -1,21 +1,17 @@
 /* eslint-disable import/no-named-as-default */
-// import { NavLink, Route, Switch } from "react-router-dom";
+import {
+  // NavLink,
+  Route,
+  Switch
+} from "react-router-dom";
 
-import PropTypes from "prop-types";
 import React from "react";
 import { hot } from "react-hot-loader";
 
 import Header from "./Header";
-import MainSlider from "./MainSlider";
-import Features from "./Features";
-import RecentWorks from "./RecentWorks";
-import OurServices from "./OurServices";
-import Middle from "./Middle";
-import Content from "./Content";
-import Partners from "./Partners";
-import ContactInfo from './ContactInfo';
-import Bottom from './Bottom';
-import Footer from './Footer';
+import Home from "./Home";
+import Bottom from "./Bottom";
+import Footer from "./Footer";
 
 // import AboutPage from "./AboutPage";
 // import FuelSavingsPage from "./containers/FuelSavingsPage";
@@ -28,26 +24,15 @@ import Footer from './Footer';
 class App extends React.Component {
   render() {
     // const activeStyle = { color: "blue" };
-    const footerLinksText = [
-      'Home',
-      'About Us',
-      'Faq',
-      'Contact Us'
-    ];
+    const footerLinksText = ["Home", "About Us", "Faq", "Contact Us"];
     return (
       <div>
-
         <Header />
-        <MainSlider />
-        <Features />
-        <RecentWorks />
-        <OurServices />
-        <Middle />
-        <Content />
-        <Partners />
-        <ContactInfo />
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
         <Bottom />
-        <Footer links={footerLinksText}/>
+        <Footer links={footerLinksText} />
 
         {/* <div>
           <div>
@@ -74,9 +59,5 @@ class App extends React.Component {
     );
   }
 }
-
-App.propTypes = {
-  children: PropTypes.element
-};
 
 export default hot(module)(App);
