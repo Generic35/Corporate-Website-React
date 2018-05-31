@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { hot } from "react-hot-loader";
 
+import Middle from "./Middle";
 import Content from "./Content";
 import Partners from "./Partners";
 import ContactInfo from './ContactInfo';
@@ -30,6 +31,7 @@ class App extends React.Component {
     ];
     return (
       <div>
+        <Middle />
         <Content />
         <Partners />
         <ContactInfo />
