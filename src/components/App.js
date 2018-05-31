@@ -10,6 +10,7 @@ import { hot } from "react-hot-loader";
 
 import Header from "./Header";
 import Home from "./Home";
+import About from "./AboutUs";
 import Bottom from "./Bottom";
 import Footer from "./Footer";
 
@@ -30,6 +31,7 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/aboutus" component={About} />
         </Switch>
         <Bottom />
         <Footer links={footerLinksText} />
