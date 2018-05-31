@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { hot } from "react-hot-loader";
 
+import Features from "./Features";
 import RecentWorks from "./RecentWorks";
 import OurServices from "./OurServices";
 import Middle from "./Middle";
@@ -33,6 +34,7 @@ class App extends React.Component {
     ];
     return (
       <div>
+        <Features />
         <RecentWorks />
         <OurServices />
         <Middle />
