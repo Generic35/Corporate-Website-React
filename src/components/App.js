@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { hot } from "react-hot-loader";
 
+import Content from "./Content";
 import Partners from "./Partners";
 import ContactInfo from './ContactInfo';
 import Bottom from './Bottom';
@@ -29,6 +30,7 @@ class App extends React.Component {
     ];
     return (
       <div>
+        <Content />
         <Partners />
         <ContactInfo />
         <Bottom />
