@@ -1,16 +1,17 @@
-import React from 'react';
-
+import React from "react";
+import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-       <header id="header">
+      <header id="header">
         <div className="top-bar">
           <div className="container">
             <div className="row">
               <div className="col-sm-6 col-xs-4">
                 <div className="top-number">
                   <p>
-                    <i className="fa fa-phone-square"></i> +1 (514) 808-681</p>
+                    <i className="fa fa-phone-square" /> +1 (514) 808-681
+                  </p>
                 </div>
               </div>
               <div className="col-sm-6 col-xs-8">
@@ -18,34 +19,39 @@ const Header = () => {
                   <ul className="social-share">
                     <li>
                       <a href="#">
-                        <i className="fa fa-facebook"></i>
+                        <i className="fa fa-facebook" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa fa-twitter"></i>
+                        <i className="fa fa-twitter" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa fa-linkedin"></i>
+                        <i className="fa fa-linkedin" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa fa-dribbble"></i>
+                        <i className="fa fa-dribbble" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa fa-skype"></i>
+                        <i className="fa fa-skype" />
                       </a>
                     </li>
                   </ul>
                   <div className="search">
                     <form role="form">
-                      <input type="text" className="search-form" autoComplete="off" placeholder="Search" />
-                      <i className="fa fa-search"></i>
+                      <input
+                        type="text"
+                        className="search-form"
+                        autoComplete="off"
+                        placeholder="Search"
+                      />
+                      <i className="fa fa-search" />
                     </form>
                   </div>
                 </div>
@@ -53,28 +59,38 @@ const Header = () => {
             </div>
           </div>
         </div>
-  
+
         <nav className="navbar navbar-inverse" role="banner">
           <div className="container">
             <div className="navbar-header">
-              <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <button
+                type="button"
+                className="navbar-toggle"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+              >
                 <span className="sr-only">Toggle navigation</span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
+                <span className="icon-bar" />
+                <span className="icon-bar" />
+                <span className="icon-bar" />
               </button>
               <a className="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="logo" />
               </a>
             </div>
-  
+
             <div className="collapse navbar-collapse navbar-right">
               <ul className="nav navbar-nav">
-                <li className="active">
-                  <a href="index.html">Home</a>
+                <li>
+                  <NavLink exact to="/">
+                    Home
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="about-us.html">About Us</a>
+                  <NavLink exact to="/aboutus">
+                    About Us
+                  </NavLink>
+                  {/* <a href="about-us.html">About Us</a> */}
                 </li>
                 <li>
                   <a href="services.html">Services</a>
@@ -83,8 +99,13 @@ const Header = () => {
                   <a href="portfolio.html">Portfolio</a>
                 </li>
                 <li className="dropdown">
-                  <a href="#" className="dropdown-toggle" data-toggle="dropdown">Pages
-                    <i className="fa fa-angle-down"></i>
+                  <a
+                    href="#"
+                    className="dropdown-toggle"
+                    data-toggle="dropdown"
+                  >
+                    Pages
+                    <i className="fa fa-angle-down" />
                   </a>
                   <ul className="dropdown-menu">
                     <li>
@@ -111,7 +132,6 @@ const Header = () => {
             </div>
           </div>
         </nav>
-  
       </header>
     </div>
   );
