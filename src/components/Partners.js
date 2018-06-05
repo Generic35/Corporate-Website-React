@@ -1,5 +1,6 @@
 import React from "react";
 import preload from "../api/data.json";
+import PartnerItem from "./PartnerItem";
 
 const Partners = () => {
   let delay = 0;
@@ -20,18 +21,7 @@ const Partners = () => {
             <ul>
               {preload.partners.map((partner, i) => {
                 delay += 300;
-                return (
-                  <li key={i}>
-                    <a href="#">
-                      <img
-                        className="img-responsive wow fadeInDown"
-                        data-wow-duration="1000ms"
-                        data-wow-delay={`${delay + 300}ms`}
-                        src={partner.imageUrl}
-                      />
-                    </a>
-                  </li>
-                );
+                return <PartnerItem key={i} delay={delay} partner={partner} />;
               })}
             </ul>
           </div>
