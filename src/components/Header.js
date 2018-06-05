@@ -115,7 +115,7 @@ const Header = () => {
                       <a href="pricing.html">Pricing</a>
                     </li>
                     <li>
-                      <a href="404.html">404</a>
+                      <NavLink to="404">404</NavLink>
                     </li>
                     <li>
                       <a href="shortcodes.html">Shortcodes</a>

@@ -8,6 +8,7 @@ import {
 import React from "react";
 import { hot } from "react-hot-loader";
 
+import FourOhFour from "./FourOhFour";
 import Header from "./Header";
 import Home from "./Home";
 import About from "./AboutUs";
@@ -32,6 +33,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/aboutus" component={About} />
+          <Route component={FourOhFour} />
         </Switch>
         <Bottom />
         <Footer links={footerLinksText} />
