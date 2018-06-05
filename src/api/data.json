@@ -1,0 +1,19 @@
+{
+  "partners": [
+    {
+      "imageUrl": "images/partners/partner1.png"
+    },
+    {
+      "imageUrl": "images/partners/partner2.png"
+    },
+    {
+      "imageUrl": "images/partners/partner3.png"
+    },
+    {
+      "imageUrl": "images/partners/partner4.png"
+    },
+    {
+      "imageUrl": "images/partners/partner5.png"
+    }
+  ]
+}

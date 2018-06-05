@@ -1,6 +1,8 @@
 import React from "react";
+import preload from "../api/data.json";
 
 const Partners = () => {
+  let delay = 0;
   return (
     <div>
       <section id="partner">
@@ -15,32 +17,22 @@ const Partners = () => {
           </div>
 
           <div className="partners">
-          <ul>
-              <li>
-                <a href="#">
-                  <img className="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="images/partners/partner1.png" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img className="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="images/partners/partner2.png" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img className="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="images/partners/partner3.png" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img className="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="images/partners/partner4.png" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img className="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="images/partners/partner5.png" />
-                </a>
-              </li>
+            <ul>
+              {preload.partners.map((partner, i) => {
+                delay += 300;
+                return (
+                  <li key={i}>
+                    <a href="#">
+                      <img
+                        className="img-responsive wow fadeInDown"
+                        data-wow-duration="1000ms"
+                        data-wow-delay={`${delay + 300}ms`}
+                        src={partner.imageUrl}
+                      />
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

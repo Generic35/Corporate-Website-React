@@ -90,7 +90,6 @@ const Header = () => {
                   <NavLink exact to="/aboutus">
                     About Us
                   </NavLink>
-                  {/* <a href="about-us.html">About Us</a> */}
                 </li>
                 <li>
                   <a href="services.html">Services</a>
